@@ -21,7 +21,7 @@ That means, you create your app's directory, and in that directory run the follo
 npm install react react-dom
 npm install -D vite
 ```
-This will create the usual `node_modules` directory, a `lock` file and the `packaje.json`.
+This will create the usual `node_modules` directory, a `lock` file and the `package.json`.
 - Edit `package.json` to include<br>
   a `"type"` property (more about it later) and<br>
   a `"scripts"` section (which will start a dev server to preview your app)
