@@ -8,3 +8,30 @@ And once that was miraculously done, another nightmare would ensue trying make i
 
 Anyway ... **what if we knew wtf?** Wouldn't that be a superpower? :muscle:<br>
 That's what this repo is all about.
+
+### :gift_heart: A quick & simple React App from Scratch
+Ultra brief:
+- create a directory for your app
+- add the two essential react libs, `react`and `react-dom`
+- include `vite` as your local development server and build tool
+```sh
+npm install react react-dom
+npm install -D vite
+```
+This will create the usual `node_modules` directory, a `lock` file and the `packaje.json`.<br>
+Edit to include a `"scripts"` section (which start and preview your app in a dev server) and a `"type"` property (more about it later):
+```diff
+{
++  "type": "module",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11"
+  },
++  "scripts": {
++    "dev": "vite"
++  }
+}
+```
