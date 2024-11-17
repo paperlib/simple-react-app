@@ -9,7 +9,7 @@ And once that was miraculously done, another nightmare would ensue trying make i
 Anyway ... **what if we knew wtf?** Wouldn't that be a superpower? :muscle:<br>
 That's what this repo is all about.
 
-### :gift_heart: A quick & simple React App from Scratch
+### :gift_heart: A quick & simple React App from scratch
 Ultra brief:
 - create a directory for your app
 - add the two essential react libs, `react`and `react-dom`
