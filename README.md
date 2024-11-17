@@ -18,8 +18,19 @@ Ultra brief:
 npm install react react-dom
 npm install -D vite
 ```
-This will create the usual `node_modules` directory, a `lock` file and the `packaje.json`.<br>
-Edit to include a `"scripts"` section (which start and preview your app in a dev server) and a `"type"` property (more about it later):
+This will create the usual `node_modules` directory, a `lock` file and the `packaje.json`.
+- Edit `package.json` to include<br>
+  a `"type"` property (more about it later) and<br>
+  a `"scripts"` section (which will start a dev server to preview your app)
+- Include a `vite.config.js` to configure some properties of `vite` (more on that as well later here under)
+<table>
+<tr>
+<th>packaje.json</th>
+<th>vite.config.js</th>
+</tr>
+<tr>
+<td valign="top">
+
 ```diff
 {
 +  "type": "module",
@@ -35,3 +46,21 @@ Edit to include a `"scripts"` section (which start and preview your app in a dev
 +  }
 }
 ```
+
+</td>
+<td valign="top">
+
+```js
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  esbuild: {
+    jsx: 'automatic', // Enables automatic JSX runtime
+  },
+});
+```
+
+</td>
+</tr>
+</table>
+
