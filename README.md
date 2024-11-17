@@ -14,6 +14,9 @@ Ultra brief:
 - create a directory for your app
 - add the two essential react libs, `react`and `react-dom`
 - include `vite` as your local development server and build tool
+
+That means, you create your app's directory, and in that directory run the following:
+
 ```sh
 npm install react react-dom
 npm install -D vite
@@ -25,7 +28,7 @@ This will create the usual `node_modules` directory, a `lock` file and the `pack
 - Include a `vite.config.js` to configure some properties of `vite` (more on that as well later here under)
 <table>
 <tr>
-<th>packaje.json</th>
+<th>package.json</th>
 <th>vite.config.js</th>
 </tr>
 <tr>
