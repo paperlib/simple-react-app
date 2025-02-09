@@ -37,7 +37,6 @@ This will create the usual `node_modules` directory, a `lock` file and the `pack
 
 ```diff
 {
-+  "type": "module",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
@@ -59,7 +58,8 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   esbuild: {
-    jsx: 'automatic', // Enables automatic JSX runtime
+    jsx: 'automatic',
+    // Enables automatic JSX runtime
   },
 });
 ```
@@ -68,3 +68,6 @@ export default defineConfig({
 </tr>
 </table>
 
+> :school_satchel: Often `package.json` includes a `"type": "module"` property: this is to explicitly distinguish ECMAScript Modules (ie. ES6 `"type": "module"`)
+> and CommonJS (`"type": "commonjs"`). Modern build tools live **Vite**, **Next.js** or even **Create React App** default to ESM, so generally you don't
+> need this unless you have an explicit preference, and since we are aiming here for a minimal (and modern) react app, we don't need this.
