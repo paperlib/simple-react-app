@@ -69,4 +69,4 @@ export default defineConfig({
 
 > :school_satchel: Often `package.json` includes a `"type": "module"` property: this makes Node.js interpret `.js` files as **ES modules**,
 > enabling the `import` syntax instead of **CommonJS** `require` (`"type": "commonjs"`). Modern build tools like **Vite** or **Next.js**
-> default to ESM so we don't need this here. See [ES Modules vs CommonJS](https://nuxt.com/docs/guide/concepts/esm) for more details.
+> default to ESM so we don't need this here. See [ES Modules vs CommonJS](https://www.quora.com/What-is-the-difference-between-CommonJS-and-ES6-modules-in-Node-js) for more details.
