@@ -24,9 +24,8 @@ npm install -D vite
 ```
 This will create the usual `node_modules` directory, a `lock` file and the `package.json`.
 - Edit `package.json` to include<br>
-  a `"type"` property (more about it later) and<br>
   a `"scripts"` section (which will start that `vite` dev server to preview your app)
-- Include a `vite.config.js` to configure some properties of `vite` (more on that as well later here under)
+- Include a `vite.config.js` to configure `vite`'s behavior (more on that later here under)
 <table>
 <tr>
 <th>package.json</th>
@@ -38,11 +37,11 @@ This will create the usual `node_modules` directory, a `lock` file and the `pack
 ```diff
 {
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "vite": "^5.4.11"
+    "vite": "^6.1.0"
   },
 +  "scripts": {
 +    "dev": "vite"
@@ -68,6 +67,6 @@ export default defineConfig({
 </tr>
 </table>
 
-> :school_satchel: Often `package.json` includes a `"type": "module"` property: this is to explicitly distinguish ECMAScript Modules (ie. ES6 `"type": "module"`)
-> and CommonJS (`"type": "commonjs"`). Modern build tools live **Vite**, **Next.js** or even **Create React App** default to ESM, so generally you don't
-> need this unless you have an explicit preference, and since we are aiming here for a minimal (and modern) react app, we don't need this.
+> :school_satchel: Often `package.json` includes a `"type": "module"` property: this makes Node.js interpret `.js` files as **ES modules**,
+> enabling the `import` syntax instead of **CommonJS** `require` (`"type": "commonjs"`). Modern build tools like **Vite** or **Next.js**
+> default to ESM so we don't need this here. See [ES Modules vs CommonJS](https://nuxt.com/docs/guide/concepts/esm) for more details.
